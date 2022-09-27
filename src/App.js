@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './component/Header/Header';
-import Meal from './component/Header/Meal/Meal';
+import Meal from './component/Meal/Meal';
 
 function App() {
   return (
