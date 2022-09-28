@@ -3,7 +3,8 @@ import Product from '../Product/Product';
 import './Meal.css';
 
 const Meal = () => {
-    const [products, setProducts]= useState([])
+    const [products, setProducts]= useState([]);
+    console.log(products);
 
     useEffect(()=>{
         fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata')
@@ -15,7 +16,7 @@ const Meal = () => {
     return (
         <div className='meal-container'>
             <div className='food-container'>
-                <h3>This is catalog</h3>
+                            
                 {
                 products?.map(product =><Product key={product.idMeal}
                 product={product}></Product>)

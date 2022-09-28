@@ -1,9 +1,13 @@
 import React from 'react';
 import './Product.css'
 
-const Product = () => {
+const Product = ({product}) => {
+    console.log(product)
     return (
-        <div>
+        <div className='product'>
+            <h1>{product.idMeal}</h1>
+            <h1>{product.strArea}</h1>
+            <h1>{product.strCategory}</h1>
 
         </div>
     );
